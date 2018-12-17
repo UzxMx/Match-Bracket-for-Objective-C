@@ -11,7 +11,7 @@ if exists('b:did_objc_mapping') || &cp || version < 700
 	finish
 endif
 let b:did_objc_mapping = 0
-ino <buffer> <silent> ] <c-r>=<SID>MatchBracket()<cr>
+ino <buffer> <silent> <c-]> <c-r>=<SID>MatchBracket()<cr>
 
 if exists('*s:MatchBracket') | finish | endif
 
@@ -29,7 +29,7 @@ endf
 fun s:MatchBracket()
 	if pumvisible() " Close popup menu if it's visible.
 		call feedkeys("\<esc>a", 'n')
-		call feedkeys(']')
+		call feedkeys("\<c-]>")
 		return ''
 	endif
 

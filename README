@@ -1,3 +1,9 @@
+# Updated README
+
+This plugin conflicts with https://github.com/jiangmiao/auto-pairs when `[` and `]` pair is enabled in that plugin. So I forked the original repository and remapped `]` to `<Ctrl-]>`, and then I can use both the plugins.
+
+# Original README
+
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=2558
 
 This is essentially TextMate's "Insert Matching Start Bracket" feature implemented in vim script. Makes it a lot more pleasant to write Objective-C.
